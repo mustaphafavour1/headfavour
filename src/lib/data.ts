@@ -3,6 +3,7 @@ export type Project = {
   no: string;
   name: string;
   category: string;
+  date: string;
   description: string;
   href: string;
   displayUrl: string;
@@ -14,6 +15,7 @@ export const projects: Project[] = [
     no: "01",
     name: "Design System",
     category: "System",
+    date: "Sept. 2026",
     description:
       "The tokens, components, and patterns behind everything I ship.",
     href: "https://designsystem.headfavour.com",
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     no: "02",
     name: "Portfolio",
     category: "Design",
+    date: "Sept. 2026",
     description: "My product design portfolio — case studies and craft.",
     href: "https://design.headfavour.com",
     displayUrl: "design.headfavour.com",
@@ -33,30 +36,33 @@ export const projects: Project[] = [
     no: "03",
     name: "StampDX",
     category: "Growth",
+    date: "Aug. 2026",
     description:
       "Turns event attendees into brand ambassadors with shareable, branded stamps.",
     href: "https://www.stampdx.com",
     displayUrl: "stampdx.com",
   },
   {
-    id: "magznmaker",
-    no: "04",
-    name: "MagznMaker",
-    category: "Media",
-    description:
-      "Turns a folder of photos into a ready-to-share digital magazine in minutes.",
-    href: "https://www.magznmaker.com",
-    displayUrl: "magznmaker.com",
-  },
-  {
     id: "moniematch",
-    no: "05",
+    no: "04",
     name: "MonieMatch",
     category: "Fintech",
+    date: "Apr. 2026",
     description:
       "Matches everyday investors with vetted small businesses nearby.",
     href: "https://www.moniematch.com",
     displayUrl: "moniematch.com",
+  },
+  {
+    id: "magznmaker",
+    no: "05",
+    name: "MagznMaker",
+    category: "Media",
+    date: "Dec. 2025",
+    description:
+      "Turns a folder of photos into a ready-to-share digital magazine in minutes.",
+    href: "https://www.magznmaker.com",
+    displayUrl: "magznmaker.com",
   },
 ];
 

@@ -77,6 +77,9 @@ export function ShippingLog() {
                 <p className="min-w-0 flex-1 truncate text-[clamp(0.72rem,1.6vh,0.85rem)] text-paper/55">
                   {project.description}
                 </p>
+                <span className="shrink-0 rounded-full border border-paper/15 px-2 py-0.5 font-mono text-[clamp(0.55rem,1.1vh,0.65rem)] text-paper/45">
+                  {project.date}
+                </span>
                 <span className="hidden shrink-0 font-mono text-[clamp(0.6rem,1.2vh,0.7rem)] text-paper/35 md:inline">
                   {project.displayUrl}
                 </span>
