@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "Startup builder shipping with AI, daily. A live catalog of what's actually launched — StampDX, MagznMaker, MonieMatch, and more.",
   openGraph: {
-    title: "headfavour — Favour Mustapha",
+    title: "Favour Mustapha ᐧ Serial Startup Builder",
     description:
       "Startup builder shipping with AI, daily. A live catalog of what's actually launched.",
     url: "https://headfavour.com",
@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
+    title: "Favour Mustapha ᐧ Serial Startup Builder",
     site: "@headfavour",
     creator: "@headfavour",
   },
