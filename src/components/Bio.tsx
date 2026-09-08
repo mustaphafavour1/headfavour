@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Stamped } from "./Stamped";
+import { Marked } from "./Marked";
 
 export function Bio() {
   return (
@@ -18,7 +18,7 @@ export function Bio() {
         </motion.p>
 
         <h2 className="font-display text-3xl font-medium tracking-tight text-paper sm:text-4xl">
-          The <Stamped tilt={2}>short</Stamped> version.
+          The <Marked>short</Marked> version.
         </h2>
 
         <div className="mt-8 overflow-hidden">

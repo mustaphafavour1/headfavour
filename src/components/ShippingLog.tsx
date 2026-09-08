@@ -2,7 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { Stamped } from "./Stamped";
+import { Marked } from "./Marked";
 import { projects } from "@/lib/data";
 
 const listVariants: Variants = {
@@ -30,7 +30,7 @@ export function ShippingLog() {
         </motion.p>
 
         <h2 className="max-w-xl font-display text-4xl font-medium tracking-tight text-paper sm:text-5xl">
-          Actually <Stamped tilt={-3}>shipped</Stamped>.
+          Actually <Marked>shipped</Marked>.
         </h2>
         <p className="mt-5 max-w-md text-lg text-paper/60">
           Five things I&rsquo;ve put into the world. All live — click through

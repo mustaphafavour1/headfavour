@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { Stamped } from "./Stamped";
+import { Marked } from "./Marked";
 import { socials, EMAIL } from "@/lib/data";
 import {
   LinkedInIcon,
@@ -20,12 +20,12 @@ const iconMap = {
   facebook: FacebookIcon,
 } as const;
 
-const badgeMeta = [
-  { rotate: -6, offset: "sm:translate-y-0" },
-  { rotate: 5, offset: "sm:translate-y-9" },
-  { rotate: -4, offset: "sm:-translate-y-3" },
-  { rotate: 7, offset: "sm:translate-y-6" },
-  { rotate: -8, offset: "sm:translate-y-1" },
+const badgeOffsets = [
+  "sm:translate-y-0",
+  "sm:translate-y-9",
+  "sm:-translate-y-3",
+  "sm:translate-y-6",
+  "sm:translate-y-1",
 ];
 
 export function Socials() {
@@ -50,7 +50,7 @@ export function Socials() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display text-4xl font-medium tracking-tight text-paper sm:text-5xl"
           >
-            Let&rsquo;s <Stamped tilt={5}>connect</Stamped>.
+            Let&rsquo;s <Marked>connect</Marked>.
           </motion.h2>
 
           <motion.p
@@ -80,7 +80,7 @@ export function Socials() {
         <div className="flex flex-wrap items-start justify-start gap-x-6 gap-y-10 sm:justify-center md:justify-end">
           {socials.map((social, index) => {
             const Icon = iconMap[social.id as keyof typeof iconMap];
-            const meta = badgeMeta[index % badgeMeta.length];
+            const offset = badgeOffsets[index % badgeOffsets.length];
             return (
               <motion.a
                 key={social.id}
@@ -88,8 +88,8 @@ export function Socials() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                initial={{ opacity: 0, scale: 0.5, rotate: meta.rotate * 3 }}
-                whileInView={{ opacity: 1, scale: 1, rotate: meta.rotate }}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.6 }}
                 transition={{
                   type: "spring",
@@ -97,9 +97,9 @@ export function Socials() {
                   damping: 14,
                   delay: index * 0.08,
                 }}
-                whileHover={{ scale: 0.94, rotate: 0 }}
-                whileTap={{ scale: 0.85 }}
-                className={`group flex flex-col items-center gap-2 ${meta.offset}`}
+                whileHover={{ scale: 1.06 }}
+                whileTap={{ scale: 0.9 }}
+                className={`group flex flex-col items-center gap-2 ${offset}`}
               >
                 <span className="flex h-16 w-16 items-center justify-center rounded-full border-[0.09em] border-paper/25 text-paper/70 transition-colors group-hover:border-stamp group-hover:text-stamp sm:h-20 sm:w-20">
                   <Icon className="h-6 w-6 sm:h-7 sm:w-7" />

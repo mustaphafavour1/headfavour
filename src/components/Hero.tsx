@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
-import { Stamped } from "./Stamped";
+import { Marked } from "./Marked";
 import { EMAIL } from "@/lib/data";
 
 export function Hero() {
@@ -42,10 +42,7 @@ export function Hero() {
             className="block"
           >
             is actually{" "}
-            <Stamped tilt={-4} delay={0.85} className="align-baseline">
-              shipped
-            </Stamped>
-            .
+            <Marked delay={0.85}>shipped</Marked>.
           </motion.span>
         </h1>
 
