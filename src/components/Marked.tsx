@@ -22,8 +22,7 @@ export function Marked({ children, className = "", delay = 0.2 }: MarkedProps) {
   return (
     <motion.span
       initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.6 }}
+      animate="show"
       className="relative inline-block px-[0.12em]"
     >
       <motion.span

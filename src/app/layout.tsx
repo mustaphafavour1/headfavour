@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://headfavour.com"),
   title: "headfavour — Favour Mustapha",
   description:
-    "Startup builder shipping with AI, daily. A live catalog of what's actually launched — StampDX, MagznMaker, MonieMatch, Findanyrev, and more.",
+    "Startup builder shipping with AI, daily. A live catalog of what's actually launched — StampDX, MagznMaker, MonieMatch, and more.",
   openGraph: {
     title: "headfavour — Favour Mustapha",
     description:
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${alanSans.variable} ${plexMono.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-ink text-paper">
+      <body className="flex h-dvh flex-col overflow-hidden bg-ink text-paper">
         {children}
       </body>
     </html>

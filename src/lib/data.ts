@@ -10,54 +10,53 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "portfolio",
+    id: "design-system",
     no: "01",
-    name: "Design Portfolio",
-    category: "Design",
+    name: "Design System",
+    category: "System",
     description:
-      "My product design portfolio — the case studies and craft behind everything else on this page.",
+      "The tokens, components, and patterns behind everything I ship.",
+    href: "https://designsystem.headfavour.com",
+    displayUrl: "designsystem.headfavour.com",
+  },
+  {
+    id: "portfolio",
+    no: "02",
+    name: "Portfolio",
+    category: "Design",
+    description: "My product design portfolio — case studies and craft.",
     href: "https://design.headfavour.com",
     displayUrl: "design.headfavour.com",
   },
   {
     id: "stampdx",
-    no: "02",
+    no: "03",
     name: "StampDX",
     category: "Growth",
     description:
-      "Turns event attendees into brand ambassadors with shareable, personalized branded stamps — one link, zero apps.",
-    href: "https://stampdx.com",
+      "Turns event attendees into brand ambassadors with shareable, branded stamps.",
+    href: "https://www.stampdx.com",
     displayUrl: "stampdx.com",
   },
   {
     id: "magznmaker",
-    no: "03",
+    no: "04",
     name: "MagznMaker",
     category: "Media",
     description:
-      "Turns a folder of photos into a beautifully designed, ready-to-share digital magazine in minutes.",
-    href: "https://magznmaker.com",
+      "Turns a folder of photos into a ready-to-share digital magazine in minutes.",
+    href: "https://www.magznmaker.com",
     displayUrl: "magznmaker.com",
   },
   {
     id: "moniematch",
-    no: "04",
+    no: "05",
     name: "MonieMatch",
     category: "Fintech",
     description:
-      "Matches everyday investors with vetted small businesses nearby — structured deals, real returns, real hustle.",
-    href: "https://moniematch.com",
+      "Matches everyday investors with vetted small businesses nearby.",
+    href: "https://www.moniematch.com",
     displayUrl: "moniematch.com",
-  },
-  {
-    id: "findanyrev",
-    no: "05",
-    name: "Findanyrev",
-    category: "Directory",
-    description:
-      "A fast way to find real reviews for anything, before you commit.",
-    href: "https://anyrev.vercel.app",
-    displayUrl: "anyrev.vercel.app",
   },
 ];
 
