@@ -7,7 +7,7 @@
   --color-paper: #f2eee4;
   --color-stamp: #ff4522;
 
-  --font-display: var(--font-bricolage);
+  --font-display: var(--font-alan-sans);
   --font-mono: var(--font-plex-mono);
   --font-sans: var(--font-manrope);
 }

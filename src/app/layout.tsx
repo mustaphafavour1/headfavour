@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, IBM_Plex_Mono, Manrope } from "next/font/google";
+import { Alan_Sans, IBM_Plex_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 
-const bricolage = Bricolage_Grotesque({
+const alanSans = Alan_Sans({
   subsets: ["latin"],
-  variable: "--font-bricolage",
+  variable: "--font-alan-sans",
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${plexMono.variable} ${manrope.variable} h-full antialiased`}
+      className={`${alanSans.variable} ${plexMono.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-ink text-paper">
         {children}
