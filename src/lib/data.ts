@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: "stampdx",
     no: "03",
-    name: "StampDX",
+    name: "Stampdx",
     category: "Growth",
     date: "Aug. 2026",
     description:

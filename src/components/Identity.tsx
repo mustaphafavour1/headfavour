@@ -32,24 +32,15 @@ export function Identity() {
         [ Favour Mustapha — currently building ]
       </motion.p>
 
-      <h1 className="font-display text-[clamp(1.6rem,4.4vh,2.75rem)] font-medium leading-[1.03] tracking-tight text-paper">
-        <motion.span
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.08 }}
-          className="block"
-        >
-          Everything here
-        </motion.span>
-        <motion.span
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.16 }}
-          className="block"
-        >
-          is actually <Marked delay={0.6}>shipped</Marked>.
-        </motion.span>
-      </h1>
+      <motion.h1
+        initial={{ opacity: 0, y: 18 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.08 }}
+        className="font-display text-[clamp(1.35rem,3.6vh,2.35rem)] font-medium leading-[1.1] tracking-tight text-paper"
+      >
+        A Directory of The Main products I&rsquo;ve{" "}
+        <Marked delay={0.5}>Built</Marked>.
+      </motion.h1>
 
       <motion.p
         initial={{ opacity: 0, y: 12 }}
